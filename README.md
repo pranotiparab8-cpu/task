@@ -25,10 +25,11 @@ Vistaar is a Flutter-based mobile application that allows users to manage leaves
 
 ## Prerequisites
 
-- Flutter SDK >= 3.0.0
-- Dart >= 3.0.0
+- Flutter SDK >= 3.0.0    Flutter (Channel stable, 3.41.5)
+- Dart >= 3.0.0  Dart SDK version: 3.11.3 (stable)
 - Android Studio / VS Code
 - Git
+- Java = java 17.0.12 2024-07-16 LTS
 
 ## Setup Instructions
 
