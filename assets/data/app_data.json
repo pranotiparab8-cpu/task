@@ -1,0 +1,94 @@
+{
+  "user": {
+    "name": "Rajesh Sharma",
+    "empId": "EMP123",
+    "leaves": [
+      {
+        "name": "Pending Leaves",
+        "count": 3,
+        "description": "Awaiting approval from managers"
+      },
+      {
+        "name": "Approved Leaves",
+        "count": 12,
+        "description": "Total leaves approved this month"
+      },
+      {
+        "name": "Expense Claims",
+        "count": 5,
+        "description": "Pending expense approvals"
+      },
+      {
+        "name": "Leave Balance",
+        "count": 33,
+        "description": "Total available leave days"
+      }
+    ],
+    "leaveBalanceDetail": [
+      {
+        "name": "Casual Leave",
+        "count": 8,
+        "total": 12
+      },
+      {
+        "name": "Sick Leave",
+        "count": 7,
+        "total": 10
+      },
+      {
+        "name": "Privilege Leave",
+        "count": 18,
+        "total": 30
+      },
+      {
+        "name": "Optional Holidays",
+        "count": 2,
+        "total": 2
+      }
+    ],
+    "quickActions": [
+      {
+        "action": "Apply Leave",
+        "desc": "Request time off work",
+        "lock": false
+      },
+      {
+        "action": "View Holidays",
+        "desc": "Check upcoming holidays",
+        "lock": false
+      },
+      {
+        "action": "My Approvals",
+        "desc": "Pending approval requests",
+        "lock": true
+      },
+      {
+        "action": "Submit Expense",
+        "desc": "Claim field visit expenses",
+        "lock": false
+      }
+    ],
+    "activityTimeline": [
+      {
+        "activity": "Leave Approved",
+        "desc": "Your casual leave request has been approved",
+        "date": "Apr 5, 2025"
+      },
+      {
+        "activity": "Expense Submitted",
+        "desc": "You submitted an expense report for Bangalore",
+        "date": "Apr 3, 2025"
+      },
+      {
+        "activity": "Leave Requested",
+        "desc": "You requested casual leave for April 5",
+        "date": "Apr 1, 2025"
+      },
+      {
+        "activity": "Profile Updated",
+        "desc": "Your profile information was updated",
+        "date": "Mar 28, 2025"
+      }
+    ]
+  }
+}
