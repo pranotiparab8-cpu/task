@@ -88,7 +88,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
                                   // ),
                                   SizedBox(
                                       height: 200,
-                                      child: _buildUpcoming()),
+                                      child: upcoming()),
                                   const SizedBox(height: 20),
                                   // Expanded(
                                   //   child: AspectRatio(
@@ -98,7 +98,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
                                   // ),
                                   SizedBox(
                                       height: 212,
-                                      child: _buildLeaveDetails(model, context)),
+                                      child: leaveDetails(model, context)),
                                 ],
                               ):
                               Row(
@@ -106,14 +106,14 @@ class DashboardView extends StackedView<DashboardViewModel> {
                                   Expanded(
                                     child: AspectRatio(
                                       aspectRatio: 3,
-                                      child: _buildUpcoming(),
+                                      child: upcoming(),
                                     ),
                                   ),
                                   SizedBox(width: 20),
                                   Expanded(
                                     child: AspectRatio(
                                       aspectRatio: 3,
-                                      child: _buildLeaveDetails(model, context),
+                                      child: leaveDetails(model, context),
                                     ),
                                   ),
                                 ],
@@ -125,10 +125,10 @@ class DashboardView extends StackedView<DashboardViewModel> {
                                   ? Column(
                                 children: [
                                   SizedBox(
-                                      child: _buildQuickActions(model, context)),
+                                      child: quickActions(model, context)),
                                   const SizedBox(height: 20),
                                   SizedBox(
-                                      child: _buildTimeline(model, context)),
+                                      child: timeline(model, context)),
                                 ],
                               ):
                               Row(
@@ -136,14 +136,14 @@ class DashboardView extends StackedView<DashboardViewModel> {
                                   Expanded(
                                     child: AspectRatio(
                                         aspectRatio: 1.5,
-                                        child: _buildQuickActions(model, context)
+                                        child: quickActions(model, context)
                                     ),
                                   ),
                                   SizedBox(width: 20),
                                   Expanded(
                                     child: AspectRatio(
                                         aspectRatio: 1.5,
-                                        child: _buildTimeline(model, context)
+                                        child: timeline(model, context)
                                     ),
                                   ),
                                 ],
@@ -330,7 +330,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
     );
   }
 
-  Widget _buildUpcoming() {
+  Widget upcoming() {
     return Card(
       color: Colors.white,
         child: Center(child: Align(
@@ -341,7 +341,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
         ))));
   }
 
-  Widget _buildLeaveDetails(DashboardViewModel model, BuildContext context) {
+  Widget leaveDetails(DashboardViewModel model, BuildContext context) {
     final leaveBalanceDetail = model.userModel?.user?.leaveBalanceDetail;
     return Card(
       color: Colors.white,
@@ -434,7 +434,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
     );
   }
 
-  Widget _buildQuickActions(DashboardViewModel model, BuildContext context) {
+  Widget quickActions(DashboardViewModel model, BuildContext context) {
     final quickActions = model.userModel?.user?.quickActions;
     return Card(
         color: Colors.white,
@@ -511,7 +511,7 @@ class DashboardView extends StackedView<DashboardViewModel> {
     )));
   }
 
-  Widget _buildTimeline(DashboardViewModel model, BuildContext context) {
+  Widget timeline(DashboardViewModel model, BuildContext context) {
     final activityTimeline = model.userModel?.user?.activityTimeline;
     return Card(
       color: Colors.white,

@@ -26,10 +26,8 @@ class DashboardViewModel extends BaseViewModel {
     final data = await _jsonService.loadData();
     //userModel = UserModel.fromJson(data);
 
-    // 2. Save to DB
     await _dbService.insertUser(data['user']);
 
-    // 3. Load from DB
     final userFromDb = await _dbService.getUser(data['user']['empId']);
     if (userFromDb != null) {
       userModel = UserModel.fromJson(userFromDb);

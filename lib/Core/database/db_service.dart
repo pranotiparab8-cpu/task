@@ -18,7 +18,6 @@ class DbService {
       path,
       version: 1,
       onCreate: _onCreate,
-      onUpgrade: _onUpgrade,
     );
   }
 
@@ -77,10 +76,6 @@ class DbService {
     UNIQUE(userId, name)
   )
 ''');
-  }
-
-  Future<void> _onUpgrade(Database db, int oldVersion, int newVersion) async {
-    // Add migration scripts here
   }
 
   Future<void> insertUser(Map<String, dynamic> userData) async {
