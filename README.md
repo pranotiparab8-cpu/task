@@ -1,22 +1,38 @@
-<<<<<<< HEAD
-# vistaar
+A Flutter project for managing tasks, leaves, quick actions, and activity timelines.
 
-A new Flutter project.
+## Table of Contents
 
-## Getting Started
+- [About](#about)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+- [Running the App](#running-the-app)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-This project is a starting point for a Flutter application.
+## About
 
-A few resources to get you started if this is your first Flutter project:
+Vistaar is a Flutter-based mobile application that allows users to manage leaves, track activities, and perform quick actions.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# task
-task
->>>>>>> 904c234af48a57e3b468b3a2085638b9381832a8
+- User registration and profile management
+- Leave management with leave balance tracking
+- Quick actions for task shortcuts
+- Activity timeline to track updates
+- Offline storage using SQLite
+
+## Prerequisites
+
+- Flutter SDK >= 3.0.0
+- Dart >= 3.0.0
+- Android Studio / VS Code
+- Git
+
+## Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/pranotiparab8-cpu/task.git
+   cd task
